@@ -36,16 +36,21 @@ public class LoginActivity extends Activity {
         }
 
         Button entrarBtn = (Button) findViewById(R.id.login_entrar);
+
         entrarBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentListaPosts = new Intent(LoginActivity.this, ListaPostsActivity.class);
-                startActivity(intentListaPosts);
+                if(validar()){
+                    Intent mapsAcitivity = new Intent(LoginActivity.this, MapsActivity.class);
+                    startActivity(mapsAcitivity);
+                }
             }
         });
     }
 
-    public void validar(View view) {
+
+
+    public boolean validar() {
         String usuario = campoUsuario.getText().toString();
         String senha = campoSenha.getText().toString();
         try {
@@ -53,11 +58,13 @@ public class LoginActivity extends Activity {
             if (isValid) {
                 Toast.makeText(LoginActivity.this, "Usuario e senha validados com sucesso!", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(LoginActivity.this,"Verifique usuario e senha!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginActivity.this, "Verifique usuario e senha!", Toast.LENGTH_SHORT).show();
             }
+            return isValid;
         } catch (Exception e) {
-            Toast.makeText(LoginActivity.this,"Erro validando usuario e senha", Toast.LENGTH_SHORT).show();
+            Toast.makeText(LoginActivity.this, "Erro validando usuario e senha", Toast.LENGTH_SHORT).show();
             e.printStackTrace();
+            return false;
         }
     }
 }
