@@ -36,6 +36,7 @@ public class LoginActivity extends Activity {
         }
 
         Button entrarBtn = (Button) findViewById(R.id.login_entrar);
+        Button cadBtn = (Button)  findViewById(R.id.login_cadastrar);
 
         entrarBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,6 +45,14 @@ public class LoginActivity extends Activity {
                     Intent mapsAcitivity = new Intent(LoginActivity.this, MapsActivity.class);
                     startActivity(mapsAcitivity);
                 }
+            }
+        });
+
+        cadBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent usuarioAcitivity = new Intent(LoginActivity.this, UsuarioActivity.class);
+                startActivity(usuarioAcitivity);
             }
         });
     }

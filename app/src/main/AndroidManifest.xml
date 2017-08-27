@@ -39,22 +39,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".InserePostActivity"
-            android:label="@string/title_activity_maps">
-        </activity>
-
+            android:label="@string/title_activity_maps"></activity>
         <activity
             android:name=".ListaPostsActivity"
-            android:label="@string/title_activity_maps">
-        </activity>
-
+            android:label="@string/title_activity_maps"></activity>
+        <activity
+            android:name=".UsuarioActivity"
+            android:label="@string/title_activity_maps"></activity>
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps">
-        </activity>
-
+            android:label="@string/title_activity_maps"></activity>
     </application>
 
 </manifest>
