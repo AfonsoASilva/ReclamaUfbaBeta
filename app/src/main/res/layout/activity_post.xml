@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/formulario_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/formulario_descricao"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:inputType="text|textMultiLine"
+            android:gravity="top"
+            android:hint="Descreva o problema"/>
+
+        <EditText
+            android:id="@+id/formulario_localizacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inserir localização"  />
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#00A8EC"
+            android:id="@+id/formulario_foto"
+            android:foreground="#cedfe6"/>
+           <Button
+               android:id="@+id/formulario_button_Camera"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:layout_marginRight="20dp"
+               android:layout_marginBottom="20dp"
+               android:layout_alignParentBottom="true"
+               android:layout_alignParentRight="true"
+               android:background="@drawable/camera" />
+        </RelativeLayout>
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.25">
+            <Button
+                android:id="@+id/formulario_botaoLike"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/like" />
+
+            <Button
+                android:id="@+id/formulario_botaoDeslike"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:background="@drawable/deslike" />
+
+        </LinearLayout>
+   </LinearLayout>
+</ScrollView>
