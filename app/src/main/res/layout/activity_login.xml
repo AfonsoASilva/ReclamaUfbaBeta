@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Usuário"
+            android:hint="E-mail"
             android:inputType="textEmailAddress"
             android:layout_above="@+id/login_senha"
             android:layout_alignLeft="@+id/login_senha"
@@ -37,9 +37,7 @@
         android:layout_above="@+id/login_entrar"
         android:layout_alignRight="@+id/login_entrar"
         android:layout_alignEnd="@+id/login_entrar"
-        android:layout_marginBottom="38dp"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_alignStart="@+id/button2" />
+        android:layout_marginBottom="38dp" />
 
     <Button
         android:id="@+id/login_entrar"
