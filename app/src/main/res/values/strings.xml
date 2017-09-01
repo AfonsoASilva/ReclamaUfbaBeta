@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">ReclamaUFBABeta</string>
-    <string name="title_activity_maps">ReclamaUFBA</string>
+    <string name="app_name">Reclame UFBA</string>
+    <string name="app_long_name">Reclame UFBA</string>
+    <string name="title_activity_maps">Reclame UFBA</string>
 </resources>
